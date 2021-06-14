@@ -11,17 +11,10 @@ import BookContext from "./contexts/BookContext";
 function App() {
   return (
     <div className="App">
-      <ThemeContextProvider>
-        <AuthContextProvider>
-          <NavBar />
+      <BookContext>
+        <NavBar />
+      </BookContext>
 
-          <BookContext>
-          <BookList />
-          </BookContext>
-          
-          <ThemeToggle />
-        </AuthContextProvider>
-      </ThemeContextProvider>
     </div>
   );
 }
