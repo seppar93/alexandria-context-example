@@ -4,7 +4,7 @@ export const bookReducer = (state,action) => {
             return [...state, {
                 title: action.book.title,
                 author :action.book.author,
-                id : Math.random(),
+                id : Math.ceil(Math.random() * 10),
             }]
         case 'REMOVE_BOOK':
             return state.filter(book => book.id !== action.id);
