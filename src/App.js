@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <BookContext>
         <NavBar />
+        <BookList/>
       </BookContext>
 
     </div>
